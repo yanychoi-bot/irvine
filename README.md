@@ -5,6 +5,7 @@
 
 - This analysis intends to find the relation between the wage of a job and the location of the workplace.
 - The analysis includes remote jobs, which are known to have the least bonds to physical offices comparing to other jobs.
+- This will help companies that need cost-efficient office areas that have relatively low wages. 
 
 2. **What is the structure of the dataset?**
    > Understand the size of the dataset, the number of variables, and the types of variables (categorical, numerical, etc.).
@@ -83,21 +84,64 @@
 
    > Examine the distribution of categorical variables through frequency tables or visualizations.
 
+   - For the 
+     
+
 7. **Are there any outliers in the data?**
 
    > Identify and assess the presence of outliers in numerical variables.
 
+   - According to the Z-score method for catching outlier data, there were 10+ rows that are significantly different compared to other values.
+
+   ```csv
+   ,Title,Company,Location,Salary,Z_Score
+   3,Freelance - Game Tester - Novato,Good Gamer Group,"Good Gamer Group in Novato, CA 94945",100.0,4.574617153783892
+   116,Team Assistant,Anthropic,"San Francisco, CA",85.94,3.689162269161447
+   133,Fundamental Research Associate (Equities),Capital Group Companies,"San Francisco, CA",93.56,4.169046068650994
+   202,Director of Influencer,Fabletics,"El Segundo, CA 90245",82.03,3.44292268175933
+   209,Weight Management Provider,Dion Health,,250.0,14.0211486397986
+   224,"Vans: Director, FPA Global Brands",Vans,"Costa Mesa, CA 92626",92.81,4.12181341122092
+   279,County Clerk/Recorder,"Sacramento County, CA","Sacramento, CA",101.21,4.6508191744377445
+   298,Executive Assistant,TextNow,"San Mateo, CA",83.33,3.524792621304791
+   317,Registrar of Voters,San Bernardino County,"San Bernardino, CA",96.75,4.36994230492024
+   334,"Manager, Business Human Resources",ABBVIE,"Irvine, CA",95.83,4.312003578472684
+   336,"Director, Disability Inclusion",Workday,"6110 Stoneridge Mall Rd, Pleasanton, CA",129.22,6.414801487259557
+   412,React Native,Zorang Technologies,"California City, CA",85.53,3.66334174976634
+   429,Director of Food Services,Stanford Health Care,"Palo Alto, CA 94305",92.01,4.071431909962176
+   436,ROTA Nanny,Prosperity Nannies & Lifestyle Management,"Prosperity Nannies & Lifestyle Management in Beverly Hills, CA 90211",75.52,3.0329432152662914
+   453,Assistant Superintendent,Holder Construction,"San Jose, CA",80.73,3.3610527422138694
+   464,Business Analyst,BayOne,"Santa Clara, CA",81.0,3.3780564988886956
+   465,Heavy Equipment Operator,Shadd Williams,"Orange County, CA",83.0,3.5040102520355587
+   582,ASSISTANT STORE DIRECTOR - RODEO DRIVE,Louis Vuitton,"295 North Rodeo Drive, Beverly Hills, CA",80.73,3.3610527422138694
+   593,Estate Manager,Best Employment Corp,"Westwood, CA",97.66,4.427251262602062
+   645,Director of Manufacturing,K-1 Packaging Group,"17989 Arenth Avenue, Industry, CA 91748",91.15,4.017271796109025
+   653,Estate Manager,"Excellence Services, LLC","Atherton, CA",75.78,3.049317203175384
+   655,Estate Manager,"Excellence Services, LLC","Atherton, CA",75.78,3.049317203175384
+   658,"Assistant Head for Diversity, Equity, and Inclusion",San Domenico School,"1500 Butterfield Road, San Anselmo, CA 94960",84.64,3.6072923296159862
+   663,Sales Manager,Uline,"San Jose, CA",80.73,3.3610527422138694
+   700,Program Manager,Digital Force Technologies,"6779 Mesa Ridge Road, San Diego, CA 92121",82.03,3.44292268175933
+   720,Growth Marketing Director,Wonder Sciences,"4011 Ocean Front Walk, Marina del Rey, CA 90292",83.33,3.524792621304791
+   722,Plumbing Service Tech,Classet,"Simi Valley, CA 93065",91.15,4.017271796109025
+   725,Growth Marketing Director,Wonder Sciences,"4011 Ocean Front Walk, Marina del Rey, CA 90292",83.33,3.524792621304791
+   727,Plumbing Service Tech,Classet,"Simi Valley, CA 93065",91.15,4.017271796109025
+   758,General Manager at Los Lagos Golf Course (with Multi-course Oversight),"CourseCo, Inc","2995 Tuers Road, San Jose, CA 95121",78.12,3.1966830943572138
+
+   ```
+
 8. **What is the distribution of the target variable (if applicable)?**
 
    > If you have a target variable (e.g., in a predictive modeling scenario), understand its distribution.
+   - ![salary histogram](plots/salary-histogram.png)
 
 9. **Are there any patterns or trends over time?**
 
    > If time is a factor, explore whether there are any temporal patterns or trends.
+   - Time is not a factor
 
 10. **Are there correlations between variables?**
 
     > Use correlation matrices or scatter plots to investigate relationships between numerical variables.
+   - 
 
 11. **How does the data vary across different groups or categories?**
 
