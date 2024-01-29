@@ -133,16 +133,15 @@
    > If you have a target variable (e.g., in a predictive modeling scenario), understand its distribution.
    - ![salary histogram](plots/salary-histogram.png)
 
-9. **Are there any patterns or trends over time?**
+<!-- 9. **Are there any patterns or trends over time?**
 
    > If time is a factor, explore whether there are any temporal patterns or trends.
-   - Time is not a factor
+   - Time is not a factor -->
 
 10. **Are there correlations between variables?**
 
     > Use correlation matrices or scatter plots to investigate relationships between numerical variables.
    - 
-
 11. **How does the data vary across different groups or categories?**
 
     > Compare subsets of the data to understand variations across different groups or categories.
